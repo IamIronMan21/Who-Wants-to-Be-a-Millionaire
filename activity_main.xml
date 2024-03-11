@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background"
+    tools:context=".MainActivity">
+
+    <!-- Money Won Text View -->
+    <TextView
+        android:id="@+id/txtMoneyWonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/money_winning_text"
+        android:gravity="center"
+        android:text="$0"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <!-- Question and Options Layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <!-- Trivia Question TextView -->
+        <TextView
+            android:id="@+id/txtTriviaQuestion"
+            android:layout_width="343dp"
+            android:layout_height="94dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginEnd="33dp"
+            android:background="@drawable/question_container_bg"
+            android:gravity="center"
+            android:text="Which planet in our solar system is known as the Red Planet?"
+            android:textColor="@color/txtColor"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.065" />
+
+        <!-- Options Buttons Layout -->
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginEnd="33dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTriviaQuestion"
+            app:layout_constraintVertical_bias="0.419">
+
+            <!-- Option A Button -->
+            <Button
+                android:id="@+id/buttonA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/default_option_a"
+                android:onClick="buttonA"
+                android:padding="13dp"
+                android:text="Jupiter"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#DDD1F3"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Option B Button -->
+            <Button
+                android:id="@+id/buttonB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/default_option_b"
+                android:onClick="buttonB"
+                android:padding="13dp"
+                android:text="Venus"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#DDD1F3"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Option C Button -->
+            <Button
+                android:id="@+id/buttonC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/default_option_c"
+                android:onClick="buttonC"
+                android:padding="13dp"
+                android:text="Mars"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#DDD1F3"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Option D Button -->
+            <Button
+                android:id="@+id/buttonD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/default_option_d"
+                android:onClick="buttonD"
+                android:padding="13dp"
+                android:text=" Saturn"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#DDD1F3"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/new_background"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Result">
+
+    <!-- Result Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/new_background"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="50sp"
+        android:textStyle="bold"/>
+
+    <!-- Result Details Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="461dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <!-- Total Questions TextView -->
+        <TextView
+            android:id="@+id/txtTotalQuestionsR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Questions:"
+            android:textAlignment="center"
+            android:textColor="#F4F1F1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Won Amount TextView -->
+        <TextView
+            android:id="@+id/txtQuesR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Won: "
+            android:textAlignment="center"
+            android:textColor="#F4F1F1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Empty LinearLayout for spacing -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"/>
+
+        <!-- Play Again Button -->
+        <Button
+            android:id="@+id/bt_play_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#616473"
+            android:padding="10dp"
+            android:text="Play Again"
+            android:textAllCaps="false"
+            android:textColor="#FDFCFC"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
